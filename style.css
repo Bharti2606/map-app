@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #20BF55, #01BAEF);
+}
+
+header {
+    background-image: linear-gradient(to right, #20BF55, #01BAEF);
+    text-align: center;
+    padding: 20px;
+}
+
+#map {
+    height: 400px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.heading {
+    color: #f3f4f6;
+    text-shadow: 1px 1px 2px #000;
+    font-family: "Roboto Slab", serif;
+    font-size: 45px;
+    font-optical-sizing: auto;
+}
+
+#results {
+    padding: 20px;
+    background-image: linear-gradient(to right, #20BF55, #01BAEF);
+}
+
+.place-item {
+    display: inline-block;
+    background-color: #e9eced;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #012036;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+}
+
+.head {
+    font-size: 20px;
+    text-align: center;
+    color: #f0ecec;
+    font-weight: bold;
+
+}
+
+.Head {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #f0ecec;
+    text-shadow: 1px 1px 2px #000;
+
+}
+
+#place-type-tabs {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.tab {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #063a68;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #0056b3;
+}
+
+#transportation-mode {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#transportation-mode button {
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+#transportation-mode button:hover {
+    background-color: #218838;
+}
+
+@media screen and (max-width: 600px) {
+    #map {
+        width: 80%;
+        margin: 0 auto;
+    }
+   
+}
+@media (min-width: 600px) {
+    #nearby-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

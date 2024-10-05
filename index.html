@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>location-search</title>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Navigate the world with ease</h1>
+        <input type="text" id="location-input" placeholder="Enter location name..." />
+        <button id="search-button">Search</button>
+    </header>
+
+    <nav id="place-type-tabs">
+        <button class="tab" data-place-type="restaurant">Restaurants</button>
+        <button class="tab" data-place-type="hotel">Hotels</button>
+        <button class="tab" data-place-type="hospital">Hospitals</button>
+        <button class="tab" data-place-type="atm">ATMs</button>
+        <button class="tab" data-place-type="gas_station">Gas Stations</button>
+        <button class="tab" data-place-type="point_of_interest">Famous Places</button>
+    </nav>
+
+    <div id="map"></div>
+
+    <div id="results" style="padding: 20px;">
+        <div id="weather-output"></div>
+        <div id="distance-output"></div>
+        <h3 class="Head">Nearby Places:</h3>
+        <div id="nearby-list"></div>
+    </div>
+</body>
+</html>
